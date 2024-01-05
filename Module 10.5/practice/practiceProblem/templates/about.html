@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>About me</h1>
+    <h3><a href="/">Home</a></h3>
+    <h3><a href="/practiceProblem/about">About</a></h3>
+
+    <h2>{{list}}</h2>
+    
+    <h3>Add : {{ list | join:" - " }}</h3>
+    <h3>Cut_name : {{ name | cut:" " }}</h3>
+    <h3>First filter : {{ list | first }}</h3>
+    <h3>Last filter : {{ list | last }}</h3>
+    <h3>Upper case : {{ name | upper }}</h3>
+    <h3>Lower case : {{ name | lower }}</h3>
+    <h3> Title : {{ title | title }}</h3>
+    <h3>Random1 : {{ list | random }}</h3>
+    <h3>Random2 : {{ list | random }}</h3>
+    <h3>Random3 : {{ list | random }}</h3>
+    <h3>Slice_name : {{ name | slice:"3" }}</h3>
+    <h3>Slice_list : {{ list | slice:"2" }}</h3>
+    <h4>Description_truncatechars : {{ description | truncatechars:50 }}</h4>
+    <h4>Description_wordcount : {{ description | wordcount }}</h4>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello.. This is Module 10.5 PP</h1>
+    <h3><a href="/">Home</a></h3>
+    <h3><a href="/practiceProblem/about">About</a></h3>
+    
+    <h3>Date1 : {{ date | date:"D d M Y" }}</h3>
+    <h3>Date2 : {{ date|date:"SHORT_DATE_FORMAT" }}</h3>
+    <h3>Age : {{ age | add:"5" }}</h3>
+    <h3>Author : {{ author | capfirst }}</h3>
+    <h3>Sort by Name : {{ courses | dictsort:"name" }}</h3>
+    <h3>Length : {{ courses | length }}</h3>
+    <h3>Make_list : {{ author | make_list }}</h3>
+    <h3>Center : "{{ author | center:"50" }}"</h3>
+    <h3>Number_size : "{{ number | filesizeformat }}"</h3>
+</body>
+</html>
